@@ -1,0 +1,260 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twitter.com/oauth2/token
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - TwitterRubyGem/5.16.0
+      Authorization:
+      - Basic dTM1MGl6TWFrS1pTQzdhSWhKazY5a2pXbTp4Zlh6d1RlcXRsYVpTdnNkOE15azJvQkFYbmMzZXp1RVJJeDduT1p6NFp5cGU3Y2E0dA==
+      Content-Type:
+      - application/x-www-form-urlencoded; charset=UTF-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '154'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 23 Oct 2016 20:13:22 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 23 Oct 2016 20:13:22 GMT
+      Ml:
+      - S
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A147725360263618377; Domain=.twitter.com; Path=/; Expires=Tue,
+        23-Oct-2018 20:13:22 UTC
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Connection-Hash:
+      - 9e6e195ce2fec77796e743fb4c8aed47
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Response-Time:
+      - '20'
+      X-Transaction:
+      - 001d6fea000f233f
+      X-Tsa-Request-Body-Time:
+      - '0'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"token_type":"bearer","access_token":"AAAAAAAAAAAAAAAAAAAAAMduxgAAAAAAs%2FYHK5y4eMya8vdgtP6pwxnsf8w%3DGvj8SQILTArZfyMkFIDGmbdLZboWtj0qxVJmkttFmZbun5yrPU"}'
+    http_version: 
+  recorded_at: Sun, 23 Oct 2016 20:13:22 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json?count=10&screen_name=@fuentesjr
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.16.0
+      Authorization:
+      - Bearer AAAAAAAAAAAAAAAAAAAAAMduxgAAAAAAs%2FYHK5y4eMya8vdgtP6pwxnsf8w%3DGvj8SQILTArZfyMkFIDGmbdLZboWtj0qxVJmkttFmZbun5yrPU
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '3962'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 23 Oct 2016 20:13:22 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 23 Oct 2016 20:13:22 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A147725360284360882; Domain=.twitter.com; Path=/; Expires=Tue,
+        23-Oct-2018 20:13:22 UTC
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Connection-Hash:
+      - d84eaabd8b9eb3b96500574450f85de6
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '1500'
+      X-Rate-Limit-Remaining:
+      - '1499'
+      X-Rate-Limit-Reset:
+      - '1477254502'
+      X-Response-Time:
+      - '42'
+      X-Transaction:
+      - 009948fb00a6c2e8
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"created_at":"Tue Sep 13 05:38:10 +0000 2016","id":775569239465877504,"id_str":"775569239465877504","text":"@oreng
+        Nope. Go has its own niche ... cloud\/network services mainly. It''s Elixir
+        and Phoenix that''s killing node https:\/\/t.co\/VwvBym07FI","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"oreng","name":"oreng","id":8399312,"id_str":"8399312","indices":[0,6]}],"urls":[{"url":"https:\/\/t.co\/VwvBym07FI","expanded_url":"http:\/\/elixir-lang.org\/","display_url":"elixir-lang.org","indices":[113,136]}]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","in_reply_to_status_id":775530730860392448,"in_reply_to_status_id_str":"775530730860392448","in_reply_to_user_id":8399312,"in_reply_to_user_id_str":"8399312","in_reply_to_screen_name":"oreng","user":{"id":30763293,"id_str":"30763293","name":"Salvador
+        Fuentes Jr.","screen_name":"fuentesjr","location":"Los Angeles, CA","description":"tube
+        engineer","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":42,"friends_count":34,"listed_count":3,"created_at":"Mon
+        Apr 13 00:46:31 +0000 2009","favourites_count":85,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":125,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_link_color":"CC3300","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"F7DA93","profile_text_color":"000000","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Mon
+        Sep 12 21:30:01 +0000 2016","id":775446391229251584,"id_str":"775446391229251584","text":"@oreng
+        Node is dead ... which leads to the rise of the Phoenix","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"oreng","name":"oreng","id":8399312,"id_str":"8399312","indices":[0,6]}],"urls":[]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eMobile Web (M5)\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":8399312,"in_reply_to_user_id_str":"8399312","in_reply_to_screen_name":"oreng","user":{"id":30763293,"id_str":"30763293","name":"Salvador
+        Fuentes Jr.","screen_name":"fuentesjr","location":"Los Angeles, CA","description":"tube
+        engineer","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":42,"friends_count":34,"listed_count":3,"created_at":"Mon
+        Apr 13 00:46:31 +0000 2009","favourites_count":85,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":125,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_link_color":"CC3300","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"F7DA93","profile_text_color":"000000","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        May 24 13:18:15 +0000 2016","id":735097580137250818,"id_str":"735097580137250818","text":"@s3ththompson
+        Awesome!! Thank you sir","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"s3ththompson","name":"Seth
+        Thompson","id":3286810687,"id_str":"3286810687","indices":[0,13]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","in_reply_to_status_id":734847164266909700,"in_reply_to_status_id_str":"734847164266909700","in_reply_to_user_id":3286810687,"in_reply_to_user_id_str":"3286810687","in_reply_to_screen_name":"s3ththompson","user":{"id":30763293,"id_str":"30763293","name":"Salvador
+        Fuentes Jr.","screen_name":"fuentesjr","location":"Los Angeles, CA","description":"tube
+        engineer","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":42,"friends_count":34,"listed_count":3,"created_at":"Mon
+        Apr 13 00:46:31 +0000 2009","favourites_count":85,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":125,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_link_color":"CC3300","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"F7DA93","profile_text_color":"000000","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Mon
+        May 23 20:39:18 +0000 2016","id":734846187740659712,"id_str":"734846187740659712","text":"@s3ththompson
+        Is the v8 js talk on video somewhere?","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"s3ththompson","name":"Seth
+        Thompson","id":3286810687,"id_str":"3286810687","indices":[0,13]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","in_reply_to_status_id":733489683192111104,"in_reply_to_status_id_str":"733489683192111104","in_reply_to_user_id":3286810687,"in_reply_to_user_id_str":"3286810687","in_reply_to_screen_name":"s3ththompson","user":{"id":30763293,"id_str":"30763293","name":"Salvador
+        Fuentes Jr.","screen_name":"fuentesjr","location":"Los Angeles, CA","description":"tube
+        engineer","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":42,"friends_count":34,"listed_count":3,"created_at":"Mon
+        Apr 13 00:46:31 +0000 2009","favourites_count":85,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":125,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_link_color":"CC3300","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"F7DA93","profile_text_color":"000000","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Thu
+        Jun 14 20:47:15 +0000 2012","id":213372050268631041,"id_str":"213372050268631041","text":"@austinrfnd  I''m
+        a communist and I like a mean (specialties) pbj sandwich","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"austinrfnd","name":"Austin
+        Fonacier","id":9390132,"id_str":"9390132","indices":[0,11]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":9390132,"in_reply_to_user_id_str":"9390132","in_reply_to_screen_name":"austinrfnd","user":{"id":30763293,"id_str":"30763293","name":"Salvador
+        Fuentes Jr.","screen_name":"fuentesjr","location":"Los Angeles, CA","description":"tube
+        engineer","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":42,"friends_count":34,"listed_count":3,"created_at":"Mon
+        Apr 13 00:46:31 +0000 2009","favourites_count":85,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":125,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_link_color":"CC3300","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"F7DA93","profile_text_color":"000000","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":{"type":"Point","coordinates":[34.1496187,-118.256266]},"coordinates":{"type":"Point","coordinates":[-118.256266,34.1496187]},"place":{"id":"509a2c2b2f6206fa","url":"https:\/\/api.twitter.com\/1.1\/geo\/id\/509a2c2b2f6206fa.json","place_type":"city","name":"Glendale","full_name":"Glendale","country_code":"","country":"","contained_within":[],"bounding_box":{"type":"Polygon","coordinates":[[[-112.409604,33.50745],[-112.151505,33.50745],[-112.151505,33.699695],[-112.409604,33.699695]]]},"attributes":{}},"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Thu
+        Jan 05 02:31:44 +0000 2012","id":154751905304805380,"id_str":"154751905304805380","text":"RT
+        @jbarnette: Revised log levels proposal: \"fyi,\" \"wtf,\" and \"omg.\"","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"jbarnette","name":"John
+        Barnette","id":10453902,"id_str":"10453902","indices":[3,13]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":30763293,"id_str":"30763293","name":"Salvador
+        Fuentes Jr.","screen_name":"fuentesjr","location":"Los Angeles, CA","description":"tube
+        engineer","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":42,"friends_count":34,"listed_count":3,"created_at":"Mon
+        Apr 13 00:46:31 +0000 2009","favourites_count":85,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":125,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_link_color":"CC3300","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"F7DA93","profile_text_color":"000000","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Thu
+        Dec 08 14:53:11 +0000 2011","id":144791640589078530,"id_str":"144791640589078530","text":"Revised
+        log levels proposal: \"fyi,\" \"wtf,\" and \"omg.\"","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter
+        for iPhone\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":10453902,"id_str":"10453902","name":"John
+        Barnette","screen_name":"jbarnette","location":"New Orleans","description":"Associate
+        webmaster at GitHub.","url":"http:\/\/t.co\/HQG1m0ezlU","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/HQG1m0ezlU","expanded_url":"http:\/\/jbarnette.com","display_url":"jbarnette.com","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":2246,"friends_count":555,"listed_count":124,"created_at":"Wed
+        Nov 21 23:09:01 +0000 2007","favourites_count":1673,"utc_offset":-18000,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":7778,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"022330","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme15\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme15\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/765581854976020482\/4KI54kY1_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/765581854976020482\/4KI54kY1_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/10453902\/1392997466","profile_link_color":"0084B4","profile_sidebar_border_color":"A8C7F7","profile_sidebar_fill_color":"C0DFEC","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":3570,"favorite_count":611,"favorited":false,"retweeted":false,"lang":"en"},"is_quote_status":false,"retweet_count":3570,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Fri
+        Oct 14 04:49:15 +0000 2011","id":124708320203378688,"id_str":"124708320203378688","text":"RT
+        @bradgodwin: Twenty years ago we had Johnny Cash, Bob Hope, and Steve Jobs.
+        Now we have no cash, no hope, and no jobs. Please don''t l ...","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"bradgodwin","name":"brad
+        godwin","id":21966624,"id_str":"21966624","indices":[3,14]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":30763293,"id_str":"30763293","name":"Salvador
+        Fuentes Jr.","screen_name":"fuentesjr","location":"Los Angeles, CA","description":"tube
+        engineer","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":42,"friends_count":34,"listed_count":3,"created_at":"Mon
+        Apr 13 00:46:31 +0000 2009","favourites_count":85,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":125,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_link_color":"CC3300","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"F7DA93","profile_text_color":"000000","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Thu
+        Oct 13 14:36:31 +0000 2011","id":124493725538844674,"id_str":"124493725538844674","text":"Twenty
+        years ago we had Johnny Cash, Bob Hope, and Steve Jobs. Now we have no cash,
+        no hope, and no jobs. Please don''t let Kevin Bacon die.","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter
+        for iPhone\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":21966624,"id_str":"21966624","name":"brad
+        godwin","screen_name":"bradgodwin","location":"Northwest Arkansas","description":"Christ-follower,
+        Husband, Coffee lover, Brand strategist, marketing enthusiast who is passionate
+        about the power of story, live music and international travel.","url":"http:\/\/t.co\/980CGRvmxh","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/980CGRvmxh","expanded_url":"http:\/\/www.linkedin.com\/in\/bradgodwin","display_url":"linkedin.com\/in\/bradgodwin","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":577,"friends_count":900,"listed_count":34,"created_at":"Thu
+        Feb 26 03:51:10 +0000 2009","favourites_count":7,"utc_offset":-18000,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":1952,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"131516","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1788593885\/image_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1788593885\/image_normal.jpg","profile_link_color":"009999","profile_sidebar_border_color":"EEEEEE","profile_sidebar_fill_color":"EFEFEF","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":906,"favorite_count":112,"favorited":false,"retweeted":false,"lang":"en"},"is_quote_status":false,"retweet_count":906,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Wed
+        Oct 12 01:12:42 +0000 2011","id":123929048614309888,"id_str":"123929048614309888","text":"RT
+        @kirilnyc: swallowing a handful of vitamins with a swig of RedBull. #startups
+        #health","truncated":false,"entities":{"hashtags":[{"text":"startups","indices":[71,80]},{"text":"health","indices":[81,88]}],"symbols":[],"user_mentions":[{"screen_name":"kirilnyc","name":"Kiril
+        Savino","id":2259510481,"id_str":"2259510481","indices":[3,12]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":30763293,"id_str":"30763293","name":"Salvador
+        Fuentes Jr.","screen_name":"fuentesjr","location":"Los Angeles, CA","description":"tube
+        engineer","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":42,"friends_count":34,"listed_count":3,"created_at":"Mon
+        Apr 13 00:46:31 +0000 2009","favourites_count":85,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":125,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_link_color":"CC3300","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"F7DA93","profile_text_color":"000000","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Tue
+        Oct 11 18:03:04 +0000 2011","id":123820928923738112,"id_str":"123820928923738112","text":"swallowing
+        a handful of vitamins with a swig of RedBull. #startups #health","truncated":false,"entities":{"hashtags":[{"text":"startups","indices":[57,66]},{"text":"health","indices":[67,74]}],"symbols":[],"user_mentions":[],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\" rel=\"nofollow\"\u003eTwitter
+        for Mac\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":11829312,"id_str":"11829312","name":"Kiril
+        Savino","screen_name":"holacrat","location":"Downtown New York City","description":"I
+        speak 4 languages, write, draw, design, code; suffer from unreasonable idealism
+        & dissatisfied optimism. COO @ GameChanger.\r\n\r\nhttps:\/\/t.co\/dBI5UDHbUs","url":"https:\/\/t.co\/k33mgYXvM2","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/k33mgYXvM2","expanded_url":"http:\/\/medium.com\/@holacrat","display_url":"medium.com\/@holacrat","indices":[0,23]}]},"description":{"urls":[{"url":"https:\/\/t.co\/dBI5UDHbUs","expanded_url":"http:\/\/GC.com\/team","display_url":"GC.com\/team","indices":[129,152]}]}},"protected":false,"followers_count":1265,"friends_count":626,"listed_count":95,"created_at":"Fri
+        Jan 04 04:55:09 +0000 2008","favourites_count":1025,"utc_offset":-14400,"time_zone":"Eastern
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":14314,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"131516","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/748520414884790272\/Pk1yladj_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/748520414884790272\/Pk1yladj_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/11829312\/1445528099","profile_link_color":"009999","profile_sidebar_border_color":"EEEEEE","profile_sidebar_fill_color":"EFEFEF","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":2,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},"is_quote_status":false,"retweet_count":2,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Wed
+        Sep 14 20:46:10 +0000 2011","id":114077500853862402,"id_str":"114077500853862402","text":"RT
+        @lsegal: NASA is using YARD fairly heavily to document their new launch control
+        system at the Kennedy Space Center. So Awesome!","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"lsegal","name":"Loren
+        Segal","id":5186831,"id_str":"5186831","indices":[3,10]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":30763293,"id_str":"30763293","name":"Salvador
+        Fuentes Jr.","screen_name":"fuentesjr","location":"Los Angeles, CA","description":"tube
+        engineer","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":42,"friends_count":34,"listed_count":3,"created_at":"Mon
+        Apr 13 00:46:31 +0000 2009","favourites_count":85,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":125,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/121951283\/bg.jpg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1157676130\/mean_mofo_normal.jpg","profile_link_color":"CC3300","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"F7DA93","profile_text_color":"000000","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Wed
+        Sep 14 18:48:08 +0000 2011","id":114047795480100864,"id_str":"114047795480100864","text":"NASA
+        is using YARD fairly heavily to document their new launch control system at
+        the Kennedy Space Center. So Awesome!","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/www.twhirl.org\" rel=\"nofollow\"\u003eSeesmic twhirl\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":5186831,"id_str":"5186831","name":"Loren
+        Segal","screen_name":"lsegal","location":"Los Angeles, CA","description":"Cyber
+        Engineer @Splice. Founder of @Polyvex Interactive. Former Amazon\/Apple Engineer
+        turned game developer. IG @lsegal_","url":"https:\/\/t.co\/C9WROr7O5Q","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/C9WROr7O5Q","expanded_url":"http:\/\/gnuu.org","display_url":"gnuu.org","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":1620,"friends_count":243,"listed_count":141,"created_at":"Thu
+        Apr 19 04:21:37 +0000 2007","favourites_count":1215,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":13091,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"AAAAAA","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/727789749\/f30c0116595c76e37fb616e4c30b3ecb.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/727789749\/f30c0116595c76e37fb616e4c30b3ecb.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/755916153612972032\/4hhNtIIU_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/755916153612972032\/4hhNtIIU_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/5186831\/1455573413","profile_link_color":"2A7DA3","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"EEEEEE","profile_text_color":"111111","profile_use_background_image":false,"has_extended_profile":true,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":4,"favorite_count":2,"favorited":false,"retweeted":false,"lang":"en"},"is_quote_status":false,"retweet_count":4,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"}]'
+    http_version: 
+  recorded_at: Sun, 23 Oct 2016 20:13:22 GMT
+recorded_with: VCR 3.0.3

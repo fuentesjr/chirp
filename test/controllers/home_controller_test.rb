@@ -21,12 +21,13 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "we are able to grab user tweets" do
-    sal = users(:sal)
-    sign_in sal
-    get home_tweets_path(username: "@fuentesjr"), as: :json
-
-    assert_response :success
-    assert_match(/@oreng Nope. Go has its own niche/, response.parsed_body.first['text'])
+    VCR.use_cassette "sals_tweets" do
+      sal = users(:sal)
+      sign_in sal
+      get home_tweets_path(username: "@fuentesjr"), as: :json
+      assert_response :success
+      assert_match(/@oreng Nope. Go has its own niche/, response.parsed_body.first['text'])
+    end
   end
 
 end
