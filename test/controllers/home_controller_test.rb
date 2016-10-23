@@ -20,11 +20,13 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     sign_out :user
   end
 
-  test "should get tweets response ok" do
-    get home_tweets_url
-    assert_response :redirect
-    follow_redirect!
+  test "we are able to grab user tweets" do
+    sal = users(:sal)
+    sign_in sal
+    get home_tweets_path(username: "@fuentesjr"), as: :json
+
     assert_response :success
+    assert_match(/@oreng Nope. Go has its own niche/, response.parsed_body.first['text'])
   end
 
 end

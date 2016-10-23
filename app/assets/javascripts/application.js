@@ -12,4 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
+//= require moment
+//= require vue
+//= require vue-router
+//= require vue-resource
+//= require vue-resource-intercept
+//= require main
 //= require_tree .

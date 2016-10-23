@@ -1,2 +1,15 @@
-<h2>Welcome Home</h2>
-<div id="app"></div>
+<h2>Welcome to Chirp!</h2>
+
+<audio autoplay>
+  <source src="<%= audio_path('chirping.mp3') %>" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div id="app">
+  <p>
+    <router-link to="/follow/@fuentesjr">Follow @fuentesjr</router-link>
+  </p>
+
+  <!-- component matched by the route will render here -->
+  <router-view></router-view>
+</div>
