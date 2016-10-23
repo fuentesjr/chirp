@@ -6,7 +6,7 @@ class HomeController < ApplicationController
 
   def tweets
     twitter_username = params[:username]
-    num_tweets = params[:count] || 10
+    num_tweets = params[:count] || 15
     @tweets = fetch(twitter_username, num_tweets)
     render :json => @tweets, status: :ok
   end
