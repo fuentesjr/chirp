@@ -1,4 +1,4 @@
-<h2>Welcome to Chirp!</h2>
+<h2 class="text-muted">Welcome to Chirp!</h2>
 
 <audio autoplay>
   <source src="<%= audio_path('chirping.mp3') %>" type="audio/mpeg">
@@ -7,8 +7,9 @@
 
 <div id="app">
   <p>
-    <router-link to="/follow/@fuentesjr">Follow @fuentesjr</router-link>
+    <router-link to="/follow/@StackCommerce">Follow @StackCommerce</router-link>
   </p>
+  <%= image_tag("chirp_logo.jpg") %>
 
   <!-- component matched by the route will render here -->
   <router-view></router-view>

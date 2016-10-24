@@ -18,5 +18,6 @@
 //= require vue-router
 //= require vue-resource
 //= require vue-resource-intercept
+//= require follow
 //= require main
 //= require_tree .
