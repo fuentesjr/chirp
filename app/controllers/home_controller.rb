@@ -8,6 +8,11 @@ class HomeController < ApplicationController
     twitter_username = params[:username]
     num_tweets = params[:count] || 25
     @tweets = fetch(twitter_username, num_tweets)
+    if @tweets
+      ActionCable.server.broadcast 'activities',
+        follow: twitter_username,
+        user: current_user.email
+    end
     render :json => @tweets, status: :ok
   end
 

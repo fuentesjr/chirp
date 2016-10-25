@@ -2,8 +2,7 @@
 // You can generate new channels where WebSocket features live using the rails generate channel command.
 //
 //= require action_cable
-//= require_self
-//= require_tree ./channels
 
-let App = {};
-App.cable = ActionCable.createConsumer();
+let App = App || {}
+App.cable = ActionCable.createConsumer()
+export default App
