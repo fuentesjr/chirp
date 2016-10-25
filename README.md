@@ -2,11 +2,11 @@
 
 
 ## Overview
-This application allows a user to view a twitter user's latest tweets (default 25). Upcoming features will include support forreal-time follow/search activity via Websockets and ActionCable
+This application allows a user to view a twitter user's latest tweets (default 25). It also includes support for real-time follow/search activity via Websockets and ActionCable
 
 
 ## Tech Stack
-This is a Rails 5 application. However, to support a more interactive experience, it is primarily a Singe Page Application using the [vuejs](https://vuejs.org/) front-end framework and [vue-router](https://github.com/vuejs/vue-router). Furthermore, we utilize [Sprockets Commoner](https://github.com/Shopify/sprockets-commoner) to give us support for ES6 syntax and other Babel transformations. 
+This is a Rails 5 application. However, to support a more interactive experience, it is primarily a Singe Page Application using the [vuejs](https://vuejs.org/) front-end framework and [vue-router](https://github.com/vuejs/vue-router). Furthermore, we utilize [Sprockets Commoner](https://github.com/Shopify/sprockets-commoner) to give us support for ES6 syntax and other Babel transformations. To support real-time activity stream features, we utilize Rail's ActionCable together with Redis in production.
 
 
 ## Ruby (2.2+)
