@@ -14,8 +14,19 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.tweetbox-shadow {
+.as-item {
+  margin: 0 2px 0 2px;
+}
+
+#tweetbox-shadow {
   box-shadow: 1px 1px 1px #888888;
+}
+
+#activity-stream {
+  margin-bottom: 15px
+}
+#activity-stream > h4 {
+  margin-bottom: 0px
 }
 
 #app-header {
