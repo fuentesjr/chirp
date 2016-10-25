@@ -21,8 +21,10 @@ gem 'jquery-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
+group :production do
+  # Use Redis adapter to run Action Cable in production
+  gem 'redis', '~> 3.0'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
