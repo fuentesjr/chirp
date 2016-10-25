@@ -1,3 +1,8 @@
+import Vue from 'vue/dist/vue'
+import VueResource from'vue-resource'
+Vue.use(VueResource)
+
+
 const Follow = {
   template: `
     <div class="container">
@@ -5,7 +10,7 @@ const Follow = {
              v-on:keyup.enter="nav" v-model="username" title="(Press Enter)"/>
       <hr>
       <div v-for="tweet in tweets">
-        <div class="well well-sm tweetbox-shadow">
+        <div id="tweetbox-shadow" class="well well-sm">
           <b v-format-date="tweet.created_at"></b>
           <span v-follow-links="tweet.text"></span>
         </div>
