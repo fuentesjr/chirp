@@ -3,15 +3,14 @@ const ActivityStream = {
     <div id="activity-stream" class="text-mute">
       <h4>Activity Stream</h4>
       <div>
-        <span class="as-item" v-for="follow in activityStream">
-          <span v-link="follow"></span>
+        <span class="as-item" v-for="follow in activityStream" v-follow-link="follow">
         </span>
       </div>
     </div>
   `,
   directives: {
-    link: {
-      bind(el, binding, vnode) {
+    followLink: {
+      update(el, binding, vnode) {
         let username = binding.value
         el.innerHTML = `<a href="/#/follow/${username}">${username}</a>`
       }

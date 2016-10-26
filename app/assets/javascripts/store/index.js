@@ -5,7 +5,7 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
     activityData: [],
-    activityDataSize: 8
+    activityDataSize: 4
   },
   mutations: {
     newfollow(state, follow) {
