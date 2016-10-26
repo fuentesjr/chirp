@@ -9,11 +9,11 @@ This application allows a user to view a twitter user's latest tweets (default 2
 This is a Rails 5 application. However, to support a more interactive experience, it is primarily a Singe Page Application using the [vuejs](https://vuejs.org/) front-end framework and [vue-router](https://github.com/vuejs/vue-router). Furthermore, we utilize [Sprockets Commoner](https://github.com/Shopify/sprockets-commoner) to give us support for ES6 syntax and other Babel transformations. To support real-time activity stream features, we utilize Rail's ActionCable together with Redis in production.
 
 
-## Ruby (2.2+)
+## Ruby
 * 2.3.1 in development
-* 2.2.4 in production (Heroku)
+* 2.3.1 in production (Heroku)
 
-## Node (4+)
+## Node (5+)
 We use node and npm to utilize Sprockets Commoner's Javascript build system
 
 ## Setup
