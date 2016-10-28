@@ -6,7 +6,7 @@ This application allows a user to view a twitter user's latest tweets (default 2
 
 
 ## Tech Stack
-This is a Rails 5 application. However, to support a more interactive experience, it is primarily a Singe Page Application using the [vuejs](https://vuejs.org/) front-end framework and [vue-router](https://github.com/vuejs/vue-router). We also use the [vuex](https://github.com/vuejs/vuex) to manage global state in the application. To support real-time activity stream features, we utilize Rail's ActionCable together with Redis in production. Furthermore, we utilize [Sprockets Commoner](https://github.com/Shopify/sprockets-commoner) to give us support for ES6 syntax and other Babel transformations.
+This is a Rails 5 application. However, to support a more interactive experience, it is primarily a Singe Page Application using the [vuejs](https://vuejs.org/) front-end framework and [vue-router](https://github.com/vuejs/vue-router). We also use the [vuex](https://github.com/vuejs/vuex) to manage global state on the front-end. To support real-time activity stream features, we utilize Rail's ActionCable together with Redis in production. Furthermore, we utilize [Sprockets Commoner](https://github.com/Shopify/sprockets-commoner) to give us support for ES6 syntax and other Babel transformations. Lastly, we use [devise](https://github.com/plataformatec/devise) together with the PostgreSQL database to support authentication on the site.
 
 
 ## Ruby
