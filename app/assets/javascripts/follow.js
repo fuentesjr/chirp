@@ -39,7 +39,7 @@ const Follow = {
   },
   data() {
     return {
-      username: "@StackCommerce",
+      username: "@vuejs",
       tweets: [],
       errors: null
     }
